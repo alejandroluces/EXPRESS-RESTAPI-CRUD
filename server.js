@@ -89,5 +89,5 @@ app.get("/producs/:id", (req,res) => {
 })
 
 
-app.listen(4000)
-console.log(`${app.get("appName")} on port ${4000}`);
+app.listen(app.get("port"))
+console.log(`${app.get("appName")} on port ${app.get("port")}`);
